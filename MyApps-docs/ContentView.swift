@@ -56,9 +56,11 @@ struct ContentView: View {
             VStack(spacing: 24) {
                 // Header
                 VStack(spacing: 8) {
-                    Image(systemName: "books.vertical.fill")
-                        .font(.system(size: 60))
-                        .foregroundStyle(.blue)
+                    Image("JBDeveloper")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 100, height: 100)
+                        .clipShape(RoundedRectangle(cornerRadius: 16))
                     
                     Text("MyApps Documentation")
                         .font(.largeTitle)
